@@ -1,0 +1,22 @@
+/*MOBILE*/
+
+@media (max-width: 800px){
+
+    /*hero*/
+
+    body section#hero{
+        background-image: url(../imagens/impactante.png);
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    /*beneficios*/
+
+    body section#beneficios{
+        grid-template-columns: 1fr;
+    }
+
+    body #beneficios article{
+        min-height: 220px;
+    }
+}

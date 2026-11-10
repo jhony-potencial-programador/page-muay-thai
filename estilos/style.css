@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor1: #D9042B;
+    --cor2: #b80000;
+    --cor3: #40010D;
+    --cor4: #F20505;
+    --cor5: #0D0D0D;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header img{ /*temporario*/
+    height: 40px;
+}
+
+
+#hamburguer{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+header section{
+    display: flex;
+    align-items: center;
+    padding:10px 20px;
+}
+
+section#topo{
+    justify-content: space-between;
+}
+
+
+#topo a{
+    color: var(--cor1);
+    background-color: var(--cor5);
+    padding: 6px 20px;
+    border-radius: 18px;
+}
+
+section#nav{
+    justify-content: center;
+}
+
+#nav a{
+    color: var(--cor5);
+    text-decoration: underline;
+    text-decoration-color: var(--cor1);
+    text-decoration-thickness: 2px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*MAIN*/
+
+/*hero*/
+
+section#hero{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    background-image: url(../imagens/impactante.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+#hero h1{
+  
+    color: var(--cor2);
+}
+
+#hero p {
+    color: white;
+}
+
+#hero a{
+    color: var(--cor2);
+}
+
+/*sobre*/
+
+section#sobre{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobre article{
+    padding: 25px 20px;
+}
+
+#sobre h2{
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+#sobre p{
+    line-height: 1.6;
+}
+
+#sobre article#apresentacao{
+    text-align: center;
+}
+
+#apresentacao h2{
+    color: var(--cor3);
+}
+
+#apresentacao h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor1);
+    margin: 10px auto 0;
+}
+
+#sobre article#filosofia{
+    background-color: var(--cor5);
+    color: white;
+}
+
+#filosofia h2{
+    color: var(--cor1);
+}
+
+#sobre article#diferenciais{
+    background-color: #f2f2f2;
+    border-left: 5px solid var(--cor1);
+}
+
+#diferenciais h2{
+    color: var(--cor3);
+}
+
+/*beneficios*/
+
+/*beneficios*/
+
+section#beneficios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+
+#beneficios article{
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 260px;
+    padding: 15px;
+}
+
+#beneficios article::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s;
+}
+
+#beneficios article:hover::before{
+    transform: scale(1.05);
+}
+
+#beneficios span{
+    font-size: 40px;
+    color: var(--cor1);
+}
+
+#beneficios h2{
+    font-size: 18px;
+    color: white;
+    margin: 8px 0;
+}
+
+#beneficios p{
+    font-size: 14px;
+    color: white;
+}
+
+#fisico::before{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/fisico.png);
+}
+
+#disciplina::before{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/diciplina.png);
+}
+
+#autodefesa::before{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/autodefesa.png);
+}
+
+#confianca::before{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/confianca.png);
+}
+
+#beneficios span{
+    font-size: 40px;
+    color: var(--cor1);
+}
+
+#beneficios h2{
+    font-size: 18px;
+    color: white;
+    margin: 8px 0;
+}
+
+#beneficios p{
+    font-size: 14px;
+    color: white;
+}
+
+#fisico{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/fisico.png);
+}
+
+#disciplina{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/diciplina.png);
+}
+
+#autodefesa{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/autodefesa.png);
+}
+
+#confianca{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/confianca.png);
+}
+
+/*aulas*/
+
+section#aulas{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#aulas h2{
+    color: var(--cor3);
+    border-left: 4px solid var(--cor1);
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+#aulas p{
+    line-height: 1.6;
+}
+
+#horarios img{
+    width: 100%;
+}
+
+/*contato*/
+
+section#contato{
+    background-color: var(--cor3);
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+#contato h2{
+    color: var(--cor1);
+}
+
+#contato img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--cor1);
+}
+
+#contato a{
+    color: white;
+    background-color: var(--cor1);
+    padding: 10px 24px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+#contato a:hover{
+    background-color: var(--cor4);
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+#direitos-autorais{
+    margin-top: 6px;
+    font-size: 12px;
+}

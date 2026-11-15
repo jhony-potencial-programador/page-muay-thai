@@ -27,6 +27,7 @@ header img{ /*temporario*/
 
 
 #hamburguer{
+
     font-size: 30px;
     cursor: pointer;
 }
@@ -50,7 +51,9 @@ section#topo{
 }
 
 section#nav{
+    display: flex;
     justify-content: center;
+    height: 10px;
 }
 
 #nav a{
@@ -62,8 +65,12 @@ section#nav{
 
 nav{
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-evenly;
+}
+
+.escondido{
+    display: flex;
 }
 
 /*MAIN*/
@@ -72,13 +79,14 @@ nav{
 
 section#hero{
     padding: 10px;
+    margin: 0px 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     height: 350px;
-    background-image: url(../imagens/impactante.png);
+    background-image: url(../imagens/desktop.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
@@ -108,6 +116,8 @@ section#sobre{
 
 #sobre article{
     padding: 25px 20px;
+    border-radius: 8px;
+
 }
 
 #sobre h2{
@@ -161,7 +171,8 @@ section#sobre{
 section#beneficios{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1px;
+    gap: 2px;
+    padding: 2px;
 }
 
 #beneficios article{
@@ -277,6 +288,7 @@ section#aulas{
 }
 
 #horarios img{
+    border-radius: 6px;
     width: 100%;
 }
 
@@ -286,6 +298,8 @@ section#contato{
     background-color: var(--cor3);
     color: white;
     padding: 40px 20px;
+    margin: 15px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -5,9 +5,9 @@
     /*hero*/
 
     body section#hero{
-        background-image: url(../imagens/impactante.png);
-        background-attachment: scroll;
-        background-position: center;
+        background-image: url(../imagens/mobile.png);
+        background-attachment: fixed;
+        background-position: top right;
     }
 
     /*beneficios*/

@@ -341,7 +341,11 @@ footer{
     font-size: 14px;
 }
 
+#criador{
+    margin-top: 3px;
+}
+
 #direitos-autorais{
-    margin-top: 6px;
+    margin-top: 3px;
     font-size: 12px;
 }
